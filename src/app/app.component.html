@@ -7,7 +7,7 @@
         <th scope="col" class="px-6 py-3">Username</th>
         <th scope="col" class="px-6 py-3">Email</th>
         <div class="inline-flex items-center">
-        <th scope="col" class="py-3">Address</th>
+          <th scope="col" class="py-3">Address</th>
           <button
             (click)="showData()"
             id="dropdownDefaultButton"
@@ -32,7 +32,7 @@
             </svg>
           </button>
         </div>
-  
+
         <th scope="col" class="px-6 py-3">Phone</th>
         <th scope="col" class="px-6 py-3">Website</th>
         <th scope="col" class="px-6 py-3">Company</th>
@@ -64,22 +64,22 @@
           scope="row"
           class="block items-center py-4 text-gray-900 whitespace-nowrap dark:text-white"
         >
-            <ng-container *ngIf="visible">
-              
-                <div class="text-sm">{{ user.address.street }}</div>
-                <div class="text-sm text-gray-500">
-                  {{ user.address.suite }}
-                </div>
-                <div class="text-sm text-gray-500">{{ user.address.city }}</div>
-                <div class="text-sm text-gray-500">
-                  ZIP CODE: {{ user.address.zipcode }}
-                </div>
-                <div class="text-sm text-gray-500">Lat: {{ user.address.geo.lat }}</div>
-                <div class="text-sm font-normal text-gray-500">
-                  Long: {{ user.address.geo.lng }}
-                </div>
-         
-            </ng-container>
+          <ng-container *ngIf="visible">
+            <div class="text-sm">{{ user.address.street }}</div>
+            <div class="text-sm text-gray-500">
+              {{ user.address.suite }}
+            </div>
+            <div class="text-sm text-gray-500">{{ user.address.city }}</div>
+            <div class="text-sm text-gray-500">
+              ZIP CODE: {{ user.address.zipcode }}
+            </div>
+            <div class="text-sm text-gray-500">
+              Lat: {{ user.address.geo.lat }}
+            </div>
+            <div class="text-sm font-normal text-gray-500">
+              Long: {{ user.address.geo.lng }}
+            </div>
+          </ng-container>
         </th>
 
         <th scope="row" class="px-6 py-4 text-gray-500 whitespace-nowrap">
